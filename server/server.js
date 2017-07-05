@@ -9,6 +9,11 @@ const publicpath=path.join(__dirname,'../public');
 
 app.use(express.static(publicpath));
 
+app.get('/',(req,res)=>
+{
+  res.send("hell");
+})
+
 app.listen(port,()=>{
   console.log(`Server is live go to localhost:${port}`);
 
