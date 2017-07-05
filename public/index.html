@@ -7,5 +7,21 @@
  <body>
    <p ><h1 > Welcome to the chat we are working very hard to improve it </h1> </p>
 
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+
+var socket= io();
+
+socket.on('connect',()=>
+{
+  console.log("connect is there");
+});
+socket.on("disconnect",()=>{
+    console.log("no connection trying to reconnect");
+});
+
+</script>
+
  </body>
  </html>
