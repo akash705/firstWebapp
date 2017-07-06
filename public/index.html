@@ -2,14 +2,35 @@
  <html>
  <head>
     <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+
 
  </head>
  <body>
-   <p ><h1 > Welcome to the chat we are working very hard to improve it </h1> </p>
+  <h1 class="text-center"> Welcome to the chat we are working very hard to improve it </h1>
+<div class="text-center col-sm-6" >
+  <form id="form">
+    <input type="text" class="text-center" name="message" placeholder="message" id="mess"/>
+
+
+    <button>submit</button>
+  </form>
+</div>
+<div class="col-sm-6 text-center" style="border-left-style:solid;border-left-width:2px;border-left-color: grey;">
+    <ul class="list-group" id="messages">
+
+    </ul>
+</div>
 
 
 <script src="/socket.io/socket.io.js"></script>
+
+<script src="/js/libs/jquery.min.js"></script>
+  <!--Bootstrap js--><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="/js/index.js">
+
 </script>
 
  </body>
